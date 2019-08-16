@@ -1,0 +1,44 @@
+.pic-card {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+
+
+    img {
+        width: 100%;
+    }
+
+    p {
+        font-family: 'Marvel', sans-serif;
+        color: white;
+        line-height: 2rem;
+    }
+
+    h2 {
+        color:white;
+        font-family: 'Marvel', sans-serif;
+        font-size: 25px;
+        padding: 30px;
+        overflow: hidden;
+        border-right: .15em solid #99ffdd;
+        white-space: nowrap;
+        margin: 0 auto;
+        letter-spacing: .15em;
+        animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
+    }
+
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+    }
+
+    @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: #FF851B; }
+    }
+
+    .date {
+        color: white;
+        padding: 15px;
+    }
+}
