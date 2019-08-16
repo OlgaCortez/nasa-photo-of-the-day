@@ -1,10 +1,11 @@
 import React, {useState, useEffect} from "react";
 import axios from "axios";
 import PicCard from "./components/PicCard.js";
-import "./App.css";
+import "./App.scss";
+
 
 function App() {
-  const [data, setData] = useState({});
+  const [data, setData] = useState([]);
   useEffect(() => {
     axios.get('https://api.nasa.gov/planetary/apod?api_key=NNKOjkoul8n1CH18TWA9gwngW1s1SmjESPjNoUFo')
     .then(response => {
